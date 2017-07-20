@@ -1,0 +1,8 @@
+{
+  "name": "rhinorex",
+  "version": "0.0.1",
+  "description": "Regular Expression Library",
+  "main": "index.js",
+  "author": "Forrest Guilloud <fbguillo@gmail.com>",
+  "license": "MIT"
+}
