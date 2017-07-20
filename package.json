@@ -2,7 +2,22 @@
   "name": "rhinorex",
   "version": "0.0.1",
   "description": "Regular Expression Library",
-  "main": "index.js",
+  "main": "dist/rhinorex.min.js",
   "author": "Forrest Guilloud <fbguillo@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dist": "webpack",
+    "prettify": "prettier",
+    "test": "yarn dist && mocha --compilers js:babel-register"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "mocha": "^3.4.2",
+    "prettier": "^1.5.3",
+    "webpack": "^3.3.0"
+  }
 }
