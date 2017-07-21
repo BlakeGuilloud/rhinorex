@@ -9,8 +9,7 @@
     "dist": "webpack",
     "prettify": "prettier --single-quote --trailing-comma all --write 'lib/*.js'",
     "test": "yarn dist && mocha --compilers js:babel-register",
-    "precommit": "lint-staged",
-    "lint": "eslint"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "lib/*.js": [
