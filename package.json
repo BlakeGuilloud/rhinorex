@@ -7,14 +7,13 @@
   "license": "MIT",
   "scripts": {
     "dist": "webpack",
-    "prettify": "prettier --single-quote --trailing-comma all --write 'lib/*.js'",
+    "prettify": "prettier --single-quote --trailing-comma all --write 'lib/*.js' && webpack",
     "test": "yarn dist && mocha --compilers js:babel-register",
     "precommit": "lint-staged"
   },
   "lint-staged": {
     "lib/*.js": [
       "yarn prettify",
-      "webpack",
       "git add"
     ]
   },
