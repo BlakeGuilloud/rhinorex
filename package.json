@@ -15,7 +15,7 @@
   "lint-staged": {
     "lib/*.js": [
       "yarn prettify",
-      "say hello",
+      "yarn dist",
       "git add"
     ]
   },
