@@ -18,8 +18,8 @@
             "error",
             {
                 "singleQuote": true,
-                "trailingComma": "all",
-                "printWidth": 80,
+                "trailingComma": "es5",
+                "printWidth": 120,
                 "tabWidth": 2,
                 "bracketSpacing": true,
                 "semi": true,

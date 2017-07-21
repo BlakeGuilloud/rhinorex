@@ -2,20 +2,13 @@
   "name": "rhinorex",
   "version": "0.0.1",
   "description": "Regular Expression Library",
-  // "main": "dist/rhinorex.min.js",
+  "main": "dist/rhinorex.min.js",
   "author": "Forrest Guilloud <fbguillo@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dist": "webpack",
-    "prettify": "prettier --single-quote --trailing-comma all --write 'lib/*.js' && webpack",
-    "test": "yarn dist && mocha --compilers js:babel-register",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "lib/*.js": [
-      "yarn prettify",
-      "git add"
-    ]
+    "dist": "yarn prettify && webpack",
+    "prettify": "prettier --single-quote --print-width 120 --trailing-comma es5 --write 'lib/*.js' 'test/*.js'",
+    "test": "yarn dist && mocha --compilers js:babel-register"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -26,8 +19,6 @@
     "eslint": "^3.19.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-prettier": "^2.1.2",
-    "husky": "^0.14.3",
-    "lint-staged": "^4.0.2",
     "mocha": "^3.4.2",
     "prettier": "^1.5.3",
     "webpack": "^3.3.0"
